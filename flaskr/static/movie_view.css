@@ -1,0 +1,93 @@
+.movie-view-main-section {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+
+.video-div {
+    border: 2px solid #008325;
+    border-radius: 1rem;
+    position: relative;
+    width: 70vw; /* Adjust the width to your desired size */
+    height: 85vh; /* Adjust the height to your desired size */
+    overflow: hidden;
+}
+
+
+.video-div video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.bounding-box {
+  position: absolute;
+  border: 0.2rem solid #008325;
+  z-index: 1;
+  display: block;
+  border-radius: 0.1rem;
+}
+
+.link-div {
+  position: absolute;
+  z-index: 1;
+  display: block;
+}
+
+.product-link {
+  color: #00ff49;
+  font-size: 1rem;
+  font-weight: bold;
+  display: block;
+  z-index: 1;
+}
+
+
+.home-page-circle-1 {
+    position: absolute;
+    width: 25vw;
+    height: 25vw;
+    border-radius: 50%;
+    background-color: rgba(0, 131, 37, 0.1);
+    bottom: 5vw;
+    left: 5vw;
+    z-index: -1;
+}
+
+.home-page-circle-2 {
+    position: absolute;
+    width: 20vw;
+    height: 20vw;
+    border-radius: 50%;
+    background-color: rgba(0, 131, 37, 0.1);
+    top: 5vw;
+    right: 10vw;
+    z-index: -1;
+}
+
+
+.home-page-circle-3 {
+    position: absolute;
+    overflow: hidden;
+    width: 35vw;
+    height: 35vw;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.home-page-circle-3::before {
+    content: '';
+    transform: translate(40%, 40%);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    background-color: rgba(0, 131, 37, 0.1);
+}
